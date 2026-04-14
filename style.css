@@ -1,41 +1,32 @@
 * {
-    margin: 0; /* Margem Padrão*/
-    padding: 0; /* Definir o tamanho de caixa */
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif; 
-    /* Define o grupo de fontes da página*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .cabecalho {
     padding: 20px;
-
-    background-color: rgb(233, 0, 0); 
-    /* Define a cor do fundo do cabecalho */
-    
+    background-color: rgb(233, 0, 0);
     width: 100%;
-    /* Define a largura*/
-    
     color: rgb(254, 254, 254);
-    /* Cor da fonte*/
-    
     height: 78px;
-    /* Define a altura */
-    
     text-align: center;
-    /* Alinha o texto*/
-
-    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.2); 
-    /* Define a sombra da caixa*/
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.2);
 }
 
 main {
-    border-color: black;
-    border-style: initial;
-    border-width: 1px;
-
+    border: 1px solid black;
 }
 
-   .card-main{
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card-main {
     width: 160px;
     height: 300px;
     border: 2px solid black;
@@ -43,53 +34,50 @@ main {
     margin: 20px;
     background-color: red;
     color: rgb(250, 250, 250);
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: nowrap;
+}
 
-    }
-    .card-container {
-        display: flex; 
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
 
-    .card-title{
+.card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
 
+.card-desc {
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+}
 
-    }
+.card-price {
+    font-size: 14px;
+    font-weight: bold;
+}
 
+.card-btn {
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    .card-image{
-
-    }
-
-    .card-desc{
-
-
-    }
-
-    .card-price{
-
-
-    }
-
-    .card-btn{
-        width: 100px;
-        text-align: center;
-        background-color: black;
-        height: 40px;
-        color: white;
-        font-weight: 700;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 8px;
-        
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-
-    }
+.card-btn:hover {
+    background-color: rgb(50, 50, 50);
+}
