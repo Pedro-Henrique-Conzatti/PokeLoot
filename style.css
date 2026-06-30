@@ -67,10 +67,10 @@ main {
 }
 
 .card-btn {
-    width: 100px;
+    width: 158px;
     height: 40px;
-    background-color: black;
-    color: white;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: 700;
     border: none;
     border-radius: 8px;
@@ -78,6 +78,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .card-btn:hover {
